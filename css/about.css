@@ -1,0 +1,335 @@
+*{
+    padding: 0px;
+    margin: 0;
+    font-family: sans-serif;
+    background: #191919;
+}
+
+
+/* 
+==========================================================================================================================================
+navbar
+=========================================================================================================================================
+ */
+
+ nav{background-color: 
+    #191919;
+    display: flex;
+    /* width: 84%; */
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 90px;
+    padding-left: 50px;
+}
+nav ul{
+    z-index: 1;
+}
+
+nav ul li {
+display: inline-block;
+list-style: none;
+margin: 10px 20px;
+background-color: #191919;
+}
+
+nav ul li a{
+    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+
+
+
+
+
+.subj a {
+    background: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.subj a:hover{
+    background: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+#iconnav {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    line-height: 80px;
+    float: left;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    margin-right: 40px;
+   
+
+}
+#click{
+    display: none;
+}
+#click:checked ~ ul {
+    left: 0%;
+}
+
+
+
+#click:checked ~ .imq:before{
+    display: none;
+}
+@media (max-width: 909px) {
+    #iconnav {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #191919;
+        top: 80px;
+        left: -100%;
+
+    text-align: center;
+    transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    nav ul.show{
+        left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.abouta{
+    width: 100%;
+    background-color: #191919;
+}
+
+
+.abouta img{
+   width: 545px;
+   
+}
+
+span{
+    color: #f9004d;
+}
+
+
+.abouta-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px; 
+    margin-bottom: 45px;
+} 
+
+
+section a{
+    background: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+
+section a:hover{
+    background: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+
+.maina {
+    display: flex;
+    width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.abouta-text {width: 50%; 
+}
+
+.miana img{
+    width: 50%;  
+   
+    padding: 20px 60px;
+
+}
+.abouta-text h1{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+.abouta-text h5{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+
+}
+
+
+
+
+
+
+/* =========================================================================================================================== 
+ Links
+=========================================================================================================================== */
+
+
+.centerdiv{
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.centerdiv a{   
+    height: 60px;
+    width: 60px;
+  
+    background-color: #00000000;
+
+    margin: 10px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 1px 4px 2px #444444;
+   line-height: 60px;
+   position: relative;
+   overflow: hidden;
+
+  
+}
+
+
+
+
+.fa-instagram{
+color: #e84393;
+}
+
+.fa-facebook{
+
+
+}
+.fa-youtube{
+    color: #e84118;
+
+}
+.fa-twitter{
+    color: #0097e6;
+
+}
+.centerdiv a i{
+    transition: all 0.3s linear ;
+    background: transparent;
+}
+.centerdiv a:hover .fa{
+    transform: scale(1.4);
+    color: rgb(255, 255, 255);
+}
+
+.centerdiv a:before{
+    content: "";
+    width: 120%;
+    height: 120% ;
+    position: absolute;
+    top: 90%;
+    left: -50%;
+    background-color: #14dcace6;
+    transform: rotate(60deg);
+}
+
+.centerdiv a:hover:before{
+    animation: socialicons 0.8s 1 ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes socialicons {
+    0%{
+        top:90%;left: -50%;
+    }
+    50%{
+        top: -60%;
+        left:-10% ;
+    }
+    100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+
+
+
+
+
+@media(max-width: 1130px){
+    .abouta img{
+width: 500px;
+    }
+}
+
+
+
+
+.downq{
+    display: none;
+}
+
+@media(max-width: 910px){
+    .maina {
+        width: 100%;
+    }
+.downq{
+    display: inline-block;
+}
+.upq{
+    display: none;
+}
+}
