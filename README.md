@@ -1,2 +1,0 @@
-# soro
-About Me
